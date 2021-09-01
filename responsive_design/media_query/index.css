@@ -2,14 +2,14 @@ html {
   text-align: center;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px), (max-width: 768px) {
   .header {
     color: orange;
   }
 }
 
 /* Using Orientation */
-/* @media (orientation: portrait) {
+ @media (orientation: portrait) {
   .content {
     font-size: 30px;
      color: red;
@@ -21,7 +21,7 @@ html {
     color: grey;
 
   }
-} */
+} 
 
 /* using Aspect Ratio */
 /* @media (aspect-ratio: 1/1) {
@@ -32,14 +32,14 @@ html {
 } */
 
 /* Using resolution */
-/* @media (min-resolution: 200dpi) {
+@media (min-resolution: 200dpi) {
   .content {
     color: white;
     background-color: black;
     padding: 30px;
     margin: 30px;
   }
-} */
+} 
 
 /* Using hover */
 /* @media (hover: hover) {

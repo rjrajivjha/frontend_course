@@ -1,0 +1,42 @@
+body{
+	display: block;
+	margin: 8px;
+}
+
+html{
+	font-size: 30px;
+}
+
+#div1{
+	width:60%;
+	height: auto;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#transition_1{
+	height: 100px;
+	width: 100px;
+	position: relative;
+	background-color: aquamarine;
+	transition: all 1s ease-in-out;
+}
+
+#transition_1:hover{
+	width: 400px;
+}
+
+#transition_2{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	background-color: salmon;
+	transition: height 1s ease-in-out;
+}
+
+#transition_2:hover{
+	height: 400px;
+	width: 200px;
+}
+
+

@@ -1,0 +1,32 @@
+body{
+	display: block;
+	margin: 8px;
+}
+
+html{
+	font-size: 30px;
+}
+
+#div1{
+	width:60%;
+	height: auto;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+@keyframes changeShape{
+	from {
+		border-radius: 0%;
+	}
+	to {
+		border-radius: 50%;
+	}
+}
+
+#animation_1{
+	height: 200px;
+	width: 200px;
+	position: relative;
+	background-color: aquamarine;
+	animation: changeShape 2s cubic-bezier(0.1, -0.6, 0.2, 0) 4 alternate;
+}

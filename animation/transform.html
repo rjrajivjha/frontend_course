@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Transform Property </title>
+	<link rel="stylesheet" type="text/css" href="transform_style.css">
+	<link rel="stylesheet" type="text/css" href="../accordion/accordion.css">
+	<meta  name="viewport" content="Width=device-width, initial-scale=1"/>
+</head>
+<body>
+
+	<div id="div1">
+		<h1 style="text-align: center;"> Transform Property</h1>
+
+		<button class="accordion">How can we rotate an element?</button>
+		<div class="panel">
+		  <p>
+		  	<li>By using rotate function <br/> rotate() : rotate in a plain, takes degree of rotation as an integer(positive for clockwise, negative for anti-clockwise)</li>
+		  	<blockquote>Eg. rotate(120deg)</blockquote>
+		  	<li> rotateX(), rotateY(), rotateZ() : rotate around an axis</li>
+		  	<blockquote>Eg. rotateX(120deg)</blockquote>
+		  	<li> rotate3d(), take rotation factor around all 3 axis as boolean, and degree of rotation.</li>
+		  	<blockquote>Eg. rotate3d(0, 1, 0, 300deg)</blockquote>
+		   </p>
+		   	<div id="no_rotation"></div>
+		   	<div id="rotate_1"></div>
+			<div class="base"></div>
+			<div id="rotate_x" class="background_img"></div>
+			<div id="rotate_x_perspective" class="background_img"></div>
+			<div class=" rotate_y_perspective background_img left"></div>
+			<div class="rotate_y_perspective background_img middle"></div>
+			<div class="rotate_y_perspective background_img right"></div>
+			<div id="rotate_3d"></div>
+			<div id="rotate_z"></div>
+		</div>
+		<button class="accordion">What units of measurement for angle are valid?</button>
+		<div class="panel">
+		  <p>
+		  	<li> degree - deg </li>
+		  	<li> Radians - rad</li>
+		  	<li> 1 full circle - turn</li>
+		  	<li> Gradient - grad</li>
+		   </p>
+		</div>
+
+		<button class="accordion">How can we scale and what is it used for?</button>
+		<div class="panel">
+		  <p>
+		  	<li> Use scale() </li>
+		  	<li> It is used to expand and shrink.</li>
+		  	<li> scale : scale(), scaleX(), scaleY(), scaleZ(), scale3d() </li>
+		   </p>
+
+		   	<div id="no_scale"></div>
+		   	<div id="scale_1"></div>
+			<div id="scale_x"></div>
+			<div id="scale_3d"></div>
+			<div id="scale_z"></div>
+
+		</div>
+
+
+		<button class="accordion">What is translate function?</button>
+		<div class="panel">
+		  <p>
+		  	It moves the div in a given direction. By default the direction is X axis.
+		   </p>
+		   	<div id="no_translate"></div>
+		   	<div id="translate_1"></div>
+			<div id="translate_x"></div>
+			<div id="translate_3d"></div>
+			<div id="translate_z"></div>
+		</div>
+
+		<button class="accordion">What is Skew function used for?</button>
+		<div class="panel">
+		  <p>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew()" target="_blank"> Skews an element on the 2D plane. </a> <br/> effect is as if you grabbed each corner of the element and pulled them along a certain angle.
+		   </p>
+		   	<div id="no_skew"></div>
+		   	<div id="skew_1"></div>
+			<div id="skew_x"></div>
+		</div>
+
+		<button class="accordion">What is Perspective used for?</button>
+		<div class="panel">
+		  <p>
+		  	It's a distance, measuring how far user is from the screen (aka z=0 plane).
+			<br/><br/> A positive value makes the element appear closer to the user than the rest of the interface, a negative value farther. 
+			<br/><br/> The greater the value, the further away the perspective of the user is.
+
+			Alternative ways : perspective property and perspective-origin property
+
+		   </p>
+		</div>
+
+		<button class="accordion">What is the effect of transforming an element on User experience?</button>
+		<div class="panel">
+		  <p>
+		  	Scaling/zooming animations are problematic for accessibility, as they are a common trigger for certain types of migraine.
+		   </p>
+		</div>
+
+		<button class="accordion">How to avoid such issue?</button>
+		<div class="panel">
+		  <p>
+		  	<li> Provide a control to allow users to turn off animations, preferably site-wide.</li>
+		  	<li> Use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target="_blank">prefers-reduced-motion</a> media feature to write a media query that will turn off animations if the user has reduced animation specified in their system preferences.</li>
+		   </p>
+		</div>
+
+	</div>
+
+</body>
+
+<script type="text/javascript" src="../accordion/accordion.js"></script>
+
+</html>
