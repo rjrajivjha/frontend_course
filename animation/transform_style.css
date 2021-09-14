@@ -138,17 +138,26 @@ html{
 	transform: scale(1.5);
 }
 
-/* #scale_x{
-
+ #scale_x{
+	width: 80px;
+	height: 80px;
+	background-color: skyblue;
+	transform: scaleX(0.6);
 }
 
 #scale_3d{
-
+	width: 80px;
+	height: 80px;
+	background-color: red;
+	transform: scaleY(0.6);
 }
 
 #scale_z{
-
-} */
+	width: 80px;
+	height: 80px;
+	background-color: black;
+	transform: scaleZ(0.6);
+} 
 
 #no_translate{
 	height: 100px;
@@ -171,17 +180,28 @@ html{
 	transform: translate(100px);
 }
 
-/* #translate_x{
-
+ #translate_x{
+	width: 60px;
+	height: 60px;
+	margin :5px;
+	background-color: skyblue;
+	transform: translateX(50px);
 }
 
 #translate_3d{
-
+	width: 60px;
+	height: 60px;
+	margin :10px;
+	background-color: skyblue;
+	transform: translateX(50px 70px 60px);
 }
 
 #translate_z{
-
-} */
+	width: 60px;
+	height: 60px;
+	background-color: skyblue;
+	transform: translateX(50px);
+} 
 
 #no_skew{
 	height: 100px;
